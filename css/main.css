@@ -1,0 +1,31 @@
+.main {
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.main-left {
+    width: 200px;
+    height: 500px;
+    background-color: green;
+}
+
+.main-right {
+    flex: 1;
+    height: 500px;
+    background-color: pink;
+}
+
+@media (min-width: 1200px){
+    .main {
+        width: 1200px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .main {
+        width: 960px;
+    }
+}
