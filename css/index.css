@@ -1,0 +1,238 @@
+@font-face {
+	font-family: element-icons;
+	src: url(fonts/element-icons.woff) format("woff");
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+header {
+	width: 100%;
+	border-bottom: 2px solid #37a5ff;
+	margin: 0 auto;
+	min-width: 960px;
+}
+
+#app {
+	width: auto;
+}
+
+.top {
+	height: 34px;
+	line-height: 32px;
+	color: #333333;
+	margin: 0 auto;
+	background: #f2f2f2;
+}
+.top_text {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.outlogin > a {
+	text-decoration: none;
+	color: #000;
+}
+.topR > div {
+	display: inline-block;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #f2f2f2;
+	position: relative;
+	border-bottom: 0;
+	cursor: pointer;
+	padding: 0 15px;
+}
+.main_bar {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 10px 0;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.form-container {
+	width: 401px;
+	background: #37a5ff;
+	padding: 2px;
+	margin-left: 80px;
+	position: relative;
+}
+.form-container input {
+	width: 90%;
+	background: #fefefe;
+	padding: 1px 5px;
+	border: 0;
+	padding-right: 40px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 5px;
+	color: #333333;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+input:focus {
+	outline: none;
+}
+.photo-search-btn {
+	position: absolute;
+	width: 42px;
+	height: 36px;
+	background: transparent;
+	right: 40px;
+}
+.coupon-get {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	left: -1px;
+	top: -5px;
+}
+.camera {
+	color: rgb(255, 255, 255);
+	width: 24px;
+	position: relative;
+	top: 2px;
+}
+.seach {
+	color: rgb(255, 255, 255);
+	width: 24px;
+	height: 24px;
+	position: relative;
+	left: 6px;
+	top: 6px;
+}
+
+.iconfont {
+	font-size: 24px;
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.head-favort a {
+	display: inline-block;
+	border: 1px solid #cccccc;
+	text-align: center;
+	height: 40px;
+	line-height: 42px;
+	padding: 0 15px;
+	margin-left: 50px;
+	position: relative;
+	text-decoration: none;
+	color: #000;
+}
+.head-nav-list {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.head-nav-list a {
+	position: relative;
+	width: 101px;
+	height: 38px;
+	line-height: 38px;
+	background: #ffffff;
+	color: #9d9d9d;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+
+
+
+/* 尾部 */
+footer {
+	border-top: 2px solid #37a5ff;
+	clear: both;
+}
+footer > div {
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.footer-content {
+	flex-direction: column;
+	text-align: left;
+	flex: 1;
+}
+.footer-title {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer-img {
+	width: 66%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.footer-text {
+	margin: 10px 0;
+	font-size: 14px;
+	display: block;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: #333333;
+	cursor: pointer;
+}
+.footer-contact {
+	display: flex;
+	flex: 3;
+}
+.footer-contact-left {
+	flex: 1.5;
+}
+.footer-contact-right {
+	flex: 2.5;
+	margin-top: 40px;
+}
+.copyright {
+	margin: 30px auto 0px;
+	text-align: center;
+	font-size: 14px;
+	color: #666666;
+}
+.beian_a {
+	display: inline-block;
+	text-decoration: none;
+	height: 20px;
+	line-height: 20px;
+}
+.beian_p {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	margin: 0px 0px 0px 5px;
+	color: #939393;
+}
+.posi_count {
+	position: absolute;
+	font-size: 18px;
+	right: 189px;
+	top: 24px;
+}
+.YH_count {
+	position: absolute;
+	font-size: 13px;
+	right: 189px;
+	top: 53px;
+}
+
+.yhc_shxx ul > li {
+	width: 200px;
+}
