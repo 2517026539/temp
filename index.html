@@ -3,9 +3,11 @@
 
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/_reset.css">
 	<link rel="stylesheet" href="./js/elementUI.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/iconfont/iconfont.css">
 </head>
 
 <body>
@@ -60,11 +62,488 @@
 		</header>
 
 		<main class="main">
-			<div class="main-left">
-
-			</div>
-			<div class="main-right">
-
+			<div class="main-content">
+				<div class="main-left">
+					<ul class="nav-menu">
+						<li class="nav-menu-item">
+							<i class="iconfont iconwode"></i>
+							<a href="#">我的工作台</a>
+							<span class="turn-right"> > </span>
+						</li>
+						<li class="nav-menu-item nav-menu-item-active">
+							<i class="iconfont iconwode"></i>
+							<a href="#">跟单工作台</a>
+							<span class="turn-right"> > </span>
+						</li>
+						<li class="nav-menu-item">
+							<i class="iconfont iconwode"></i>
+							<a href="#">我的工作台</a>
+							<span class="turn-right"> > </span>
+						</li>
+						<li class="nav-menu-item">
+							<i class="iconfont iconwode"></i>
+							<a href="#">我的工作台</a>
+							<span class="turn-right"> > </span>
+						</li>
+						<li class="nav-menu-item">
+							<i class="iconfont iconwode"></i>
+							<a href="#">我的工作台</a>
+							<span class="turn-right"> > </span>
+						</li>
+						<li class="nav-menu-item">
+							<i class="iconfont iconwode"></i>
+							<a href="#">我的工作台</a>
+							<span class="turn-right"> > </span>
+						</li>
+						<li class="nav-menu-item">
+							<i class="iconfont iconwode"></i>
+							<a href="#">我的工作台</a>
+							<span class="turn-right"> > </span>
+						</li>
+						<li class="nav-menu-item">
+							<i class="iconfont iconwode"></i>
+							<a href="#">我的工作台</a>
+							<span class="turn-right"> > </span>
+						</li>
+					</ul>
+				</div>
+				<div class="main-right">
+					<div class="bread-crumb">
+						<span>跟单工作台</span>
+						<span class="gekai"> > </span>
+						<span class="active">普通订单</span>
+					</div>
+					<div class="tabs">
+						<div class="tabs-item">印花订单</div>
+						<div class="tabs-item active">普通订单</div>
+					</div>
+					<div class="workbench">
+						<h1 class="workbench-title">跟单工作台</h1>
+						<ul class="documentary">
+							<li class="documentary-item">
+								<label for="dingdanNum">订单号:</label>
+								<input class="documentary-input" type="text" id="dingdanNum" name="dingdanNum"  placeholder="请输入订单号">
+							</li>
+							<li class="documentary-item">
+								<label for="shop">商品&款号:</label>
+								<input class="documentary-input" type="text" id="shop" name="shop" placeholder="请输入商品&款号">
+							</li>
+							<li class="documentary-item">
+								<label for="state">订单状态:</label>
+								<select class="documentary-input state" id="state" name="state">
+									<option class="moren-select" disabled selected>请选择订单状态</option>
+									<option value="1" labal="1">请选择订单状态请选择订单状态请选择订单状态请选择订单状态</option>
+									<option value="2" label="2">1</option>
+									<option value="3" label="3">1</option>
+									<option value="4" label="4">1</option>
+								</select>
+								<div class="turn-down">
+									<i class="iconfont iconxiangxia"></i>
+								</div>
+							</li>
+							<li class="documentary-item">
+								<label for="xiadanTime">下单时间:</label>
+								<input class="documentary-input" type="text" id="xiadanTime" name="xiadanTime" placeholder="请选择下单时间（时间段筛选）">
+							</li>
+							<li class="documentary-item">
+								<label for="remark">订单备注:</label>
+								<input class="documentary-input" type="text" id="remark" name="remark" placeholder="请输入订单备注">
+							</li>
+							<li class="documentary-item" style="opacity: 0">
+								<label>填充:</label>
+								<input class="documentary-input" type="text" placeholder="填充内容">
+							</li>
+						</ul>
+						<div class="workbench-btn">
+							<button class="query">查询</button>
+							<button class="reset">重置</button>
+						</div>
+					</div>
+					<div class="order">
+						<div class="order-header">
+							<ul class="order-tab">
+								<li class="order-tabs-item active">
+									<a href="#">
+										<span class="title">全部订单</span>
+										<span class="count">9999</span>
+									</a>
+								</li>
+								<li class="order-tabs-item">
+									<a href="#">
+										<span class="title">未配货</span>
+										<span class="count">3</span>
+									</a>
+								</li>
+								<li class="order-tabs-item">
+									<a href="#">
+										<span class="title">配货中</span>
+										<span class="count">3</span>
+									</a>
+								</li>
+								<li class="order-tabs-item">
+									<a href="#">
+										<span class="title">待自提/收货</span>
+										<span class="count">3</span>
+									</a>
+								</li>
+								<li class="order-tabs-item">
+									<a href="#">
+										<span class="title">已完成</span>
+										<span class="count">3</span>
+									</a>
+								</li>
+							</ul>
+							<div class="order-header-right">
+								<button class="count-down-btn">
+									<i class="iconfont iconwode"></i>
+									倒计时
+								</button>
+								<button class="export-order-btn">
+									导出订单
+								</button>
+							</div>
+						</div>
+						<div class="order-num">
+							<span class="title">总订单数 : </span>
+							<span class="num">9999</span>
+							<span class="title">总金额 : </span>
+							<span class="num">10000</span>
+						</div>
+						<ul class="table-header">
+							<li class="table-header-item flex-1">商品详情</li>
+							<li class="table-header-item">单价</li>
+							<li class="table-header-item">数量</li>
+							<li class="table-header-item">金额</li>
+							<li class="table-header-item">订单状态</li>
+							<li class="table-header-item">操作</li>
+						</ul>
+						<div class="order-item today">
+							<div class="order-item-header">
+								<p class="storehouse">新百佳仓库</p>
+								<div class="order-item-header-box">
+									<span class="title">订单号 : </span>
+									<span class="order-num-1">00121010416245365249</span>
+								</div>
+								<div class="order-item-header-box">
+									<span class="title">下单时间 : </span>
+									<span class="xiadan-time">2021-01-04 18:18:14</span>
+								</div>
+								<div class="order-item-header-box">
+									<span class="title">预期出货时间 : </span>
+									<span class="date">2021-01-06</span>
+								</div>
+								<div class="tabs-date">
+									<span>今天</span>
+								</div>
+							</div>
+							<div class="order-item-body">
+								<div class="product-detail">
+									<img src="./img/mylove.jpg" alt="#">
+									<div class="description">XBSH CM02# 360G纯棉毛圈套头带帽卫衣</div>
+									<div class="type">
+										<p class="type-item">
+											<span>颜色：</span>
+											<span class="val">白色</span>
+										</p>
+										<p class="type-item">
+											<span>尺码：</span>
+											<span class="val">XL-1</span>
+										</p>
+									</div>
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+									1
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+									<span class="order-state">
+										已接单
+									</span>
+								</div>
+								<div class="order-item-body-item">
+									<a href="#" class="check-order">
+										订单详情
+									</a>
+									<a href="#" class="check-order">再来一单</a>
+								</div>
+							</div>
+							<ul class="order-item-footer">
+								<li class="order-item-footer-item">
+									<span class="title">订单备注：</span>
+									<p class="beizhu"></p>
+								</li>
+								<li class="order-item-footer-item">
+									<span class="title">终端收货信息：</span>
+									<p class="info">张三,13458846511,广东省广州市白云区 广州迅印科技有限公司--韵达,京东随机不指定（已发快递：申通快递）<span class="bold">[寄付]（运费：￥8.00）</span></p>
+								</li>
+								<li class="order-item-footer-item">
+									<label class="title">跟单备注：</label>
+									<input type="text" class="gendan" name="gendan" placeholder="直接填写,自动保存">
+								</li>
+							</ul>
+						</div>
+						<div class="order-item tomorrow">
+							<div class="order-item-header">
+								<p class="storehouse">新百佳仓库</p>
+								<div class="order-item-header-box">
+									<span class="title">订单号 : </span>
+									<span class="order-num-1">00121010416245365249</span>
+								</div>
+								<div class="order-item-header-box">
+									<span class="title">下单时间 : </span>
+									<span class="xiadan-time">2021-01-04 18:18:14</span>
+								</div>
+								<div class="order-item-header-box">
+									<span class="title">预期出货时间 : </span>
+									<span class="date">2021-01-06</span>
+								</div>
+								<div class="tabs-date">
+									<span>明天</span>
+								</div>
+							</div>
+							<div class="order-item-body">
+								<div class="product-detail">
+									<img src="./img/mylove.jpg" alt="#">
+									<div class="description">XBSH CM02# 360G纯棉毛圈套头带帽卫衣</div>
+									<div class="type">
+										<p class="type-item">
+											<span>颜色：</span>
+											<span class="val">白色</span>
+										</p>
+										<p class="type-item">
+											<span>尺码：</span>
+											<span class="val">XL-1</span>
+										</p>
+									</div>
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+									1
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+									<span class="order-state">
+										配货中
+									</span>
+								</div>
+								<div class="order-item-body-item">
+									<a href="#" class="check-order">
+										订单详情
+									</a>
+									<a href="#" class="check-order">再来一单</a>
+								</div>
+							</div>
+							<ul class="order-item-footer">
+								<li class="order-item-footer-item">
+									<span class="title">订单备注：</span>
+									<p class="beizhu"></p>
+								</li>
+								<li class="order-item-footer-item">
+									<span class="title">终端收货信息：</span>
+									<p class="info">张三,13458846511,广东省广州市白云区 广州迅印科技有限公司--韵达,京东随机不指定（已发快递：申通快递）<span class="bold">[寄付]（运费：￥8.00）</span></p>
+								</li>
+								<li class="order-item-footer-item">
+									<label class="title">跟单备注：</label>
+									<input type="text" class="gendan" name="gendan" placeholder="直接填写,自动保存">
+								</li>
+							</ul>
+						</div>
+						<div class="order-item">
+							<div class="order-item-header">
+								<p class="storehouse">新百佳仓库</p>
+								<div class="order-item-header-box">
+									<span class="title">订单号 : </span>
+									<span class="order-num-1">00121010416245365249</span>
+								</div>
+								<div class="order-item-header-box">
+									<span class="title">下单时间 : </span>
+									<span class="xiadan-time">2021-01-04 18:18:14</span>
+								</div>
+								<div class="order-item-header-box">
+									<span class="title">预期出货时间 : </span>
+									<span class="date">2021-01-06</span>
+								</div>
+								<div class="tabs-date">
+									<span>明天</span>
+								</div>
+							</div>
+							<div class="order-item-body">
+								<div class="product-detail">
+									<img src="./img/mylove.jpg" alt="#">
+									<div class="description">XBSH CM02# 360G纯棉毛圈套头带帽卫衣</div>
+									<div class="type">
+										<p class="type-item">
+											<span>颜色：</span>
+											<span class="val">白色</span>
+										</p>
+										<p class="type-item">
+											<span>尺码：</span>
+											<span class="val">XL-1</span>
+										</p>
+									</div>
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+									1
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+									<span class="order-state">
+										待自提/收货
+									</span>
+								</div>
+								<div class="order-item-body-item">
+									<a href="#" class="check-order">
+										订单详情
+									</a>
+									<a href="#" class="check-order">再来一单</a>
+								</div>
+							</div>
+							<ul class="order-item-footer">
+								<li class="order-item-footer-item">
+									<span class="title">订单备注：</span>
+									<p class="beizhu"></p>
+								</li>
+								<li class="order-item-footer-item">
+									<span class="title">终端收货信息：</span>
+									<p class="info">张三,13458846511,广东省广州市白云区 广州迅印科技有限公司--韵达,京东随机不指定（已发快递：申通快递）<span class="bold">[寄付]（运费：￥8.00）</span></p>
+								</li>
+								<li class="order-item-footer-item">
+									<label class="title">跟单备注：</label>
+									<input type="text" class="gendan" name="gendan" placeholder="直接填写,自动保存">
+								</li>
+							</ul>
+						</div>
+						<div class="order-item">
+							<div class="order-item-header">
+								<p class="storehouse">新百佳仓库</p>
+								<div class="order-item-header-box">
+									<span class="title">订单号 : </span>
+									<span class="order-num-1">00121010416245365249</span>
+								</div>
+								<div class="order-item-header-box">
+									<span class="title">下单时间 : </span>
+									<span class="xiadan-time">2021-01-04 18:18:14</span>
+								</div>
+								<div class="order-item-header-box">
+									<span class="title">预期出货时间 : </span>
+									<span class="date">2021-01-06</span>
+								</div>
+								<div class="tabs-date">
+									<span>明天</span>
+								</div>
+							</div>
+							<div class="order-item-body">
+								<div class="product-detail">
+									<img src="./img/mylove.jpg" alt="#">
+									<div class="description">XBSH CM02# 360G纯棉毛圈套头带帽卫衣</div>
+									<div class="type">
+										<p class="type-item">
+											<span>颜色：</span>
+											<span class="val">白色</span>
+										</p>
+										<p class="type-item">
+											<span>尺码：</span>
+											<span class="val">XL-1</span>
+										</p>
+									</div>
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+									1
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+									<span class="order-state">
+										已完成
+									</span>
+								</div>
+								<div class="order-item-body-item">
+									<a href="#" class="check-order">
+										订单详情
+									</a>
+									<a href="#" class="check-order">再来一单</a>
+									<a href="#" class="check-order">申请售后</a>
+								</div>
+							</div>
+							<div class="order-item-body">
+								<div class="product-detail">
+									<img src="./img/mylove.jpg" alt="#">
+									<div class="description">XBSH CM02# 360G纯棉毛圈套头带帽卫衣</div>
+									<div class="type">
+										<p class="type-item">
+											<span>颜色：</span>
+											<span class="val">白色</span>
+										</p>
+										<p class="type-item">
+											<span>尺码：</span>
+											<span class="val">XL-1</span>
+										</p>
+									</div>
+								</div>
+								<div class="order-item-body-item">
+									139.00
+								</div>
+								<div class="order-item-body-item">
+								</div>
+								<div class="order-item-body-item">
+								</div>
+								<div class="order-item-body-item">
+									<span class="order-state">
+									</span>
+								</div>
+								<div class="order-item-body-item">
+								</div>
+							</div>
+							<ul class="order-item-footer">
+								<li class="order-item-footer-item">
+									<span class="title">订单备注：</span>
+									<p class="beizhu"></p>
+								</li>
+								<li class="order-item-footer-item">
+									<span class="title">终端收货信息：</span>
+									<p class="info">张三,13458846511,广东省广州市白云区 广州迅印科技有限公司--韵达,京东随机不指定（已发快递：申通快递）<span class="bold">[寄付]（运费：￥8.00）</span></p>
+								</li>
+								<li class="order-item-footer-item">
+									<label class="title">跟单备注：</label>
+									<input type="text" class="gendan" name="gendan" placeholder="直接填写,自动保存">
+								</li>
+							</ul>
+						</div>
+						<div class="pagination">
+							<ul class="pagination-content">
+								<li class="pagination-item"> < </li>
+								<li class="pagination-item">1</li>
+								<li class="pagination-item active">2</li>
+								<li class="pagination-item">3</li>
+								<li class="pagination-item">4</li>
+								<li class="pagination-item">5</li>
+								<li class="pagination-item">...</li>
+								<li class="pagination-item">30</li>
+								<li class="pagination-item">31</li>
+								<li class="pagination-item"> > </li>
+							</ul>
+							<p class="page-count">共<span>38</span>页</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 
