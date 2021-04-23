@@ -65,44 +65,56 @@
 			<div class="main-content">
 				<div class="main-left">
 					<ul class="nav-menu">
-						<li class="nav-menu-item">
+						<li href="#" class="nav-menu-item">
 							<i class="iconfont iconwode"></i>
 							<a href="#">我的工作台</a>
 							<span class="turn-right"> > </span>
 						</li>
 						<li class="nav-menu-item nav-menu-item-active">
-							<i class="iconfont iconwode"></i>
-							<a href="#">跟单工作台</a>
+							<a href="#">
+								<i class="iconfont iconziyuan"></i>
+								<span class="nav-menu-item-name">跟单工作台</span>
+								<span class="turn-right"> > </span>
+							</a>
+						</li>
+						<li class="nav-menu-item">
+							<i class="iconfont iconshouhou"></i>
+							<a href="#">售后工作台</a>
+							<span class="turn-right"> &gt; </span>
+						</li>
+						<li class="nav-menu-item">
+							<i class="iconfont iconcoupon"></i>
+							<a href="#">我的优惠劵</a>
 							<span class="turn-right"> > </span>
 						</li>
 						<li class="nav-menu-item">
-							<i class="iconfont iconwode"></i>
-							<a href="#">我的工作台</a>
+							<i class="iconfont iconshujuzhongxin"></i>
+							<a href="#">数据中心</a>
 							<span class="turn-right"> > </span>
 						</li>
 						<li class="nav-menu-item">
-							<i class="iconfont iconwode"></i>
-							<a href="#">我的工作台</a>
+							<i class="iconfont iconnavicon-jylstj"></i>
+							<a href="#">资金流水</a>
 							<span class="turn-right"> > </span>
 						</li>
 						<li class="nav-menu-item">
-							<i class="iconfont iconwode"></i>
-							<a href="#">我的工作台</a>
+							<i class="iconfont icontubiao_zhanghao"></i>
+							<a href="#">账号信息</a>
 							<span class="turn-right"> > </span>
 						</li>
 						<li class="nav-menu-item">
-							<i class="iconfont iconwode"></i>
-							<a href="#">我的工作台</a>
+							<i class="iconfont iconshoucang"></i>
+							<a href="#">我的收藏</a>
 							<span class="turn-right"> > </span>
 						</li>
 						<li class="nav-menu-item">
-							<i class="iconfont iconwode"></i>
-							<a href="#">我的工作台</a>
+							<i class="iconfont icontubiao_gendan"></i>
+							<a href="#">收货地址</a>
 							<span class="turn-right"> > </span>
 						</li>
 						<li class="nav-menu-item">
-							<i class="iconfont iconwode"></i>
-							<a href="#">我的工作台</a>
+							<i class="iconfont iconshezhi"></i>
+							<a href="#">安全设置</a>
 							<span class="turn-right"> > </span>
 						</li>
 					</ul>
@@ -132,14 +144,14 @@
 								<label for="state">订单状态:</label>
 								<select class="documentary-input state" id="state" name="state">
 									<option class="moren-select" disabled selected>请选择订单状态</option>
-									<option value="1" labal="1">请选择订单状态请选择订单状态请选择订单状态请选择订单状态</option>
-									<option value="2" label="2">1</option>
-									<option value="3" label="3">1</option>
-									<option value="4" label="4">1</option>
+									<option value="已完成" labal="已完成">已完成</option>
+									<option value="配货中" label="配货中">配货中</option>
+									<option value="已接单" label="已接单">已接单</option>
+									<option value="待自提/收货" label="待自提/收货">待自提/收货</option>
 								</select>
-								<div class="turn-down">
+								<!--<div class="turn-down">
 									<i class="iconfont iconxiangxia"></i>
-								</div>
+								</div>-->
 							</li>
 							<li class="documentary-item">
 								<label for="xiadanTime">下单时间:</label>
@@ -147,16 +159,16 @@
 							</li>
 							<li class="documentary-item">
 								<label for="remark">订单备注:</label>
-								<input class="documentary-input" type="text" id="remark" name="remark" placeholder="请输入订单备注">
+								<input class="documentary-input long-input" type="text" id="remark" name="remark" placeholder="请输入订单备注">
 							</li>
-							<li class="documentary-item" style="opacity: 0">
+							<!--<li class="documentary-item" style="opacity: 0">
 								<label>填充:</label>
 								<input class="documentary-input" type="text" placeholder="填充内容">
-							</li>
+							</li>-->
 						</ul>
 						<div class="workbench-btn">
-							<button class="query">查询</button>
-							<button class="reset">重置</button>
+							<button class="query" type="submit">查询</button>
+							<button class="reset" type="reset">重置</button>
 						</div>
 					</div>
 					<div class="order">
@@ -266,7 +278,7 @@
 									</span>
 								</div>
 								<div class="order-item-body-item">
-									<a href="#" class="check-order">
+									<a href="#" class="check-order show">
 										订单详情
 									</a>
 									<a href="#" class="check-order">再来一单</a>
@@ -600,6 +612,7 @@
 	<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
 	<script src="./js/jquery.js"></script>
 	<script src="./js/elementUI.js"></script>
+	<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		new Vue({
 			el: '#app',
@@ -621,8 +634,6 @@
 				
 			}
 		})
-
-	
 	</script>
 
 </body>
